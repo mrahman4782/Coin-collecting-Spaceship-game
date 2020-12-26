@@ -3,6 +3,7 @@ A coin-collecting game made with the programming language processing. The object
 
 ## Walkthrough
 ![](CoinSwalkthrough1.gif)
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Licenses
  
