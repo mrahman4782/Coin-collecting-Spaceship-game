@@ -125,6 +125,7 @@ void mousecursor()
   rect(mouseX+10,mouseY-3,6,6);
   rect(mouseX-16,mouseY-3,6,6);
   }
+  // Creates the controllable spaceship
 }
 void gameborders()
 {
@@ -158,6 +159,8 @@ void gameborders()
   fill(#F9FA17);
   textSize(18);
   text("Collect the coins!",10,500);
+  
+  // Sets the playable game screen
 }
  
 void coingenerator()
