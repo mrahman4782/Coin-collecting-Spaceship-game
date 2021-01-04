@@ -124,16 +124,10 @@ void mousecursor()
   fill(155);
   rect(mouseX+10,mouseY-3,6,6);
   rect(mouseX-16,mouseY-3,6,6);
- 
- 
- 
- 
- 
   }
 }
 void gameborders()
 {
- 
   stroke(40);
   line(170,0,170,700);
   stroke(40);
@@ -165,12 +159,7 @@ void gameborders()
   textSize(18);
   text("Collect the coins!",10,500);
 }
-  void test()
-  {
-  stroke(50);
-  line(830,0,830,700);
-  line(0,240,900,240);
-  }
+ 
 void coingenerator()
 {
   if(gamestart == true && gameend == false)
@@ -187,7 +176,6 @@ void coingenerator()
  
   }
  
- 
 }
 void coin(float x, float y)
 {
@@ -197,7 +185,8 @@ void coin(float x, float y)
   ellipse(x,y,28,28);
   fill(35);
   line(x,y-5,x,y+5);
- 
+  
+  // Randomly generate coins
 }
 void position()
 {
@@ -214,6 +203,8 @@ void obstacles()
    obstacle3();
    obstacle4();
    obstacle5();
+   
+   // Activate all obstacles
 }
 void obstacle1()
 {
@@ -340,7 +331,6 @@ void obstacle5()
       if (obstacle5posX > 800)
       {
         obstacle5moveway = false;
-  
       }
     }
    
@@ -385,6 +375,7 @@ void gameoveractivate()
   gameend = true;
   }
   }
+  // Kill player and end the game when they come in contact with and obstacle or leave the gamescreen
 }
 void gameend()
 {
@@ -402,6 +393,7 @@ void gameend()
   textSize(24);
   text("Click to restart", 369, 500);
   }
+  // Final message
 }
 void finalscore()
 {
